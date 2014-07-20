@@ -24,7 +24,7 @@ The archetype can be used for both creating a new and adding to an existing proj
 Usage
 -----
 
-Create an empty directory and run the following command inside it:
+Run the following maven command from the command-line:
 
 ```
 mvn archetype:generate -DarchetypeGroupId=com.smartbear.maven.archetypes -DarchetypeArtifactId=soapui-plugin-archetype 
@@ -41,7 +41,7 @@ for the following:
 - type : the type of plugin you want to generate, specify one of the values described above (for example "Action")
 
 You will be prompted to confirm your values, do that and a skeleton plugin will be generated. You can build the 
-plugin by simply running
+plugin by simply changing to the generated plugin directory and running
 
 ```
 mvn install
