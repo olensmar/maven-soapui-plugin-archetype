@@ -2,7 +2,24 @@ maven-soapui-plugin-archetype
 =============================
 
 A maven archetype for creating SoapUI 5.1 plugins - supports creation of the following types of plugins:
-- Action: creates a custom action, by default at the Project level
+- Action: creates an Action, by default at the Project level 
+- Assertion: creates a custom assertion
+- Discovery: creates a custom REST Discovery method
+- Import: creates a custom Project Importer
+- Listener: creates a TestRunListener (you can change to any of the other supported listeners)
+- PanelBuilder: creates a PanelBuilder, use this if you create your own TestStep
+- Prefs: creates a custom tab in the global Preferences
+- RequestFilter: creates a custom Request filter, applied to all outgoing requests
+- RequestEditor: creates a custom Request Editor view
+- RequestInspector: creates a custom Request Inspector tab
+- ResponseEditor: creates a custom Response Editor view
+- ResponseInspector: creates a custom Response Inspector tab
+- SubReport: creates a custom SubReport data source
+- TestStep: creates a custom TestStep
+- ToolbarAction: creates a custom Toolbar item
+- ValueProvider: creates a custom property-expansion Value Provider
+
+The archetype can be used for both creating a new and adding to an existing project.
 
 Usage
 -----
