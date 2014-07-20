@@ -52,6 +52,41 @@ simply open the open the Plugin Manager in SoapUI and choose to load a plugin fr
 the version being invalid go into the generate PluginConfig class and change the version attribute of the PluginConfiguration
 annotation to a valid value, for example "1.0.0" - and rebuild the plugin).
 
+Adding to an existing project
+-----------------------------
+
+You can use the archetype to add to an existing project - in this case only new files will be added to the target
+directory. If you add to a project that doesn't have any previous plugins make sure to add the following to your 
+maven pom:
+
+```
+...
+<repositories>
+    <repository>
+        <id>eviware</id>
+        <name>Eviware Maven2 Repository</name>
+        <url>http://www.eviware.com/repository/maven2</url>
+    </repository>
+    ...
+</repositories>
+
+<dependencies>
+
+    <dependency>
+        <groupId>com.smartbear.soapui</groupId>
+        <artifactId>soapui-pro</artifactId>
+        <version>5.1.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.smartbear.soapui</groupId>
+        <artifactId>soapui</artifactId>
+        <version>5.1.0</version>
+    </dependency>
+    ...
+</dependencies>
+```
+
 Good Luck!
 
 Release History
