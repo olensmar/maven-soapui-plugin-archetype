@@ -27,7 +27,8 @@ Usage
 Run the following maven command from the command-line:
 
 ```
-mvn archetype:generate -DarchetypeGroupId=com.smartbear.maven.archetypes -DarchetypeArtifactId=soapui-plugin-archetype -DarchetypeCatalog=http://www.eviware.com/repository/maven2
+mvn archetype:generate -DarchetypeGroupId=com.smartbear.maven.archetypes -DarchetypeArtifactId=soapui-plugin-archetype 
+ -DarchetypeCatalog=http://www.eviware.com/repository/maven2
 ```
 
 This will download the archetype from the SmartBear repository and start the project creation process. You will be prompted
