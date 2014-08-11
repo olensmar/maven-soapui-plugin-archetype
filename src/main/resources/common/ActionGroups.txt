@@ -21,6 +21,14 @@ public class ActionGroups {
     public static final String OPEN_PROJECT_ACTIONS = "EnabledWsdlProjectActions";
 
     /*
+     * Actions applied to opened composite projects. If you're writing a project level action that applies to composite
+     * projects, you usually want to include this action group, e.g. by using the @ActionConfigurations annotation.
+     *
+     * Have your action class extend AbstractSoapUIAction<WsdlProject>.
+     */
+    public static final String OPEN_COMPOSITE_PROJECT_ACTIONS = "CompositeWsdlProjectActions";
+
+    /*
     * Actions applied to closed projects.
     *
     * Have your action class extend AbstractSoapUIAction<WsdlProject>.
