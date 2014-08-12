@@ -8,7 +8,7 @@ import com.eviware.soapui.support.action.support.AbstractSoapUIAction;
 
 import javax.swing.*;
 
-@ActionConfiguration(actionGroup = "EnabledWsdlProjectActions")
+@ActionConfiguration(actionGroup = ActionGroups.OPEN_PROJECT_ACTIONS)
 public class Plugin${type} extends AbstractSoapUIAction<WsdlProject> {
 
     public Plugin${type}() {
