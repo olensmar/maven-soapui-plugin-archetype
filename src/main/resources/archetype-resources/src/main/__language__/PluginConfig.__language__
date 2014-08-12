@@ -6,7 +6,7 @@ package ${package};
 import com.eviware.soapui.plugins.PluginAdapter;
 import com.eviware.soapui.plugins.PluginConfiguration;
 
-@PluginConfiguration(groupId = "${groupId}.plugins", name = "${artifactId} SoapUI ${type}", version = "${version}",
+@PluginConfiguration(groupId = "${groupId}.plugins", name = "${artifactId} SoapUI ${type}", version = "0.1",
         autoDetect = true, description = "${artifactId} SoapUI ${type}",
         infoUrl = "" )
 public class PluginConfig extends PluginAdapter {
