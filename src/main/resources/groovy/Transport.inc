@@ -1,10 +1,10 @@
 package ${package};
 
-import com.eviware.soapui.impl.support.AbstractHttpRequestInterface;
+import com.eviware.soapui.impl.wsdl.WsdlRequest;
 import com.eviware.soapui.impl.wsdl.submit.RequestFilter;
 import com.eviware.soapui.impl.wsdl.submit.RequestTransport;
-import com.eviware.soapui.impl.wsdl.submit.transports.http.HttpResponse;
 import com.eviware.soapui.impl.wsdl.submit.transports.http.SSLInfo;
+import com.eviware.soapui.impl.wsdl.submit.transports.http.WsdlResponse;
 import com.eviware.soapui.model.iface.Request;
 import com.eviware.soapui.model.iface.Response;
 import com.eviware.soapui.model.iface.SubmitContext;
@@ -64,8 +64,13 @@ public class Plugin${type} implements RequestTransport {
         }
 
         @Override
-        public AbstractHttpRequestInterface<?> getRequest() {
-            return (AbstractHttpRequestInterface<?>) super.getRequest();
+        public Vector<?> getWssResult() {
+            return null;
+        }
+
+        @Override
+        public WsdlRequest getRequest() {
+            return (WsdlRequest) super.getRequest();
         }
 
         @Override
