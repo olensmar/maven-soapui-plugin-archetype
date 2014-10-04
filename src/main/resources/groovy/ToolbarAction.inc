@@ -6,16 +6,12 @@ import com.eviware.soapui.plugins.ToolbarPosition;
 import com.eviware.soapui.support.UISupport;
 import com.eviware.soapui.support.action.support.AbstractSoapUIAction;
 
-/**
- * Example of a plugin action that will be inserted into the SoapUI main toolbar.
- */
-
 @ActionConfiguration(actionGroup = "EnabledWsdlProjectActions", toolbarPosition = ToolbarPosition.FUNCTIONAL_TESTING,
         toolbarIcon = "/favicon.png", description = "Says Hello")
-public class Plugin${type} extends AbstractSoapUIAction<Workspace> {
+public class My${type} extends AbstractSoapUIAction<Workspace> {
 
-    public Plugin${type}() {
-        super("Plugin Toolbar Action", "A sample Toolbar action");
+    public My${type}() {
+        super("My Toolbar Action", "My toolbar action");
     }
 
     @Override

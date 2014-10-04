@@ -7,7 +7,7 @@ import com.eviware.soapui.model.testsuite.TestCaseRunner;
 import com.eviware.soapui.plugins.ListenerConfiguration;
 
 @ListenerConfiguration
-public class Plugin${type} extends TestRunListenerAdapter {
+public class My${type} extends TestRunListenerAdapter {
 
     @Override
     public void beforeRun(TestCaseRunner testRunner, TestCaseRunContext runContext) {

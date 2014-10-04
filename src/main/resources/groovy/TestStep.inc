@@ -10,14 +10,10 @@ import com.eviware.soapui.model.testsuite.TestCaseRunner;
 import com.eviware.soapui.model.testsuite.TestStepResult;
 import com.eviware.soapui.plugins.auto.PluginTestStep;
 
-/**
- * Created by ole on 17/06/14.
- */
+@PluginTestStep(typeName = "MyTestStep", name = "My TestStep", description = "My TestStep")
+public class My${type} extends WsdlTestStepWithProperties {
 
-@PluginTestStep(typeName = "SampleTestStep", name = "Sample TestStep", description = "A sample TestStep")
-public class Plugin${type} extends WsdlTestStepWithProperties {
-
-    public Plugin${type}(WsdlTestCase testCase, TestStepConfig config, boolean forLoadTest) {
+    public My${type}(WsdlTestCase testCase, TestStepConfig config, boolean forLoadTest) {
         super(testCase, config, false, forLoadTest);
     }
 

@@ -7,14 +7,10 @@ import net.sf.jasperreports.engine.JRDataSource;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRField;
 
-/**
- * Created by ole on 18/06/14.
- */
+@PluginSubReport(name = "MySubReport", description = "My SubReport", id = "MySubReport", level = "COMMON")
+public class My${type} extends AbstractJasperSubReport {
 
-@PluginSubReport(name = "SampleSubReport", description = "A sample SubReport", id = "SampleSubReport", level = "COMMON")
-public class Plugin${type} extends AbstractJasperSubReport {
-
-    protected Plugin${type}(ModelItem modelItem, String nameInReport, boolean cacheDataSource) {
+    protected My${type}(ModelItem modelItem, String nameInReport, boolean cacheDataSource) {
         super(modelItem, nameInReport, cacheDataSource);
     }
 

@@ -9,7 +9,7 @@ import com.eviware.soapui.support.UISupport;
 import java.util.List;
 
 @PluginDiscoveryMethod
-public class Plugin${type} implements DiscoveryMethod {
+public class My${type} implements DiscoveryMethod {
     @Override
     public boolean isSynchronous() {
         return false;

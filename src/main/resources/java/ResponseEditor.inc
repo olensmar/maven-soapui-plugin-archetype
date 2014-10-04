@@ -9,17 +9,13 @@ import com.eviware.soapui.support.editor.xml.XmlEditor;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 
-/**
- * Created by ole on 18/06/14.
- */
-
-@PluginResponseEditorView(viewId = "SampleResponseEditorView")
-public class Plugin${type} extends AbstractXmlEditorView {
+@PluginResponseEditorView(viewId = "MyResponseEditorView")
+public class My${type} extends AbstractXmlEditorView {
 
     private ModelItem modelItem;
 
-    public Plugin${type}(Editor<?> editor, ModelItem modelItem) {
-        super("Sample Response Editor View", (XmlEditor) editor, "SampleResponseEditorView");
+    public My${type}(Editor<?> editor, ModelItem modelItem) {
+        super("My Response Editor View", (XmlEditor) editor, "MyResponseEditorView");
         this.modelItem = modelItem;
     }
 

@@ -10,16 +10,12 @@ import com.eviware.soapui.support.editor.xml.XmlDocument;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 
-/**
- * Created by ole on 18/06/14.
- */
-
-@PluginResponseInspector(inspectorId = "SampleResponseInspector")
-public class Plugin${type} extends AbstractXmlInspector {
+@PluginResponseInspector(inspectorId = "MyResponseInspector")
+public class My${type} extends AbstractXmlInspector {
     private ModelItem modelItem;
 
-    public Plugin${type}(Editor<?> editor, ModelItem modelItem) {
-        super("Sample Response Inspector", "A sample response inspector", true, "SampleResponseInspector");
+    public My${type}(Editor<?> editor, ModelItem modelItem) {
+        super("My Response Inspector", "My Response Inspector", true, "MyResponseInspector");
         this.modelItem = modelItem;
     }
 

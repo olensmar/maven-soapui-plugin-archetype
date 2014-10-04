@@ -9,10 +9,10 @@ import com.eviware.soapui.support.action.support.AbstractSoapUIAction;
 import javax.swing.*;
 
 @ActionConfiguration(actionGroup = ActionGroups.OPEN_PROJECT_ACTIONS)
-public class Plugin${type} extends AbstractSoapUIAction<WsdlProject> {
+public class My${type} extends AbstractSoapUIAction<WsdlProject> {
 
-    public Plugin${type}() {
-        super("Plugin Action", "A plugin action at the project level");
+    public My${type}() {
+        super("My Action", "My plugin action at the project level");
     }
 
     @Override

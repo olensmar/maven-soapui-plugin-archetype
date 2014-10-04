@@ -7,7 +7,7 @@ import com.eviware.soapui.support.components.SimpleForm;
 import com.eviware.soapui.support.types.StringToStringMap;
 
 @PluginPrefs
-public class Plugin${type} implements Prefs {
+public class My${type} implements Prefs {
     @Override
     public SimpleForm getForm() {
         return new SimpleForm();

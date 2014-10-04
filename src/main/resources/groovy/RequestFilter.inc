@@ -7,12 +7,8 @@ import com.eviware.soapui.impl.wsdl.submit.transports.http.HttpResponse;
 import com.eviware.soapui.model.iface.SubmitContext;
 import com.eviware.soapui.plugins.auto.PluginRequestFilter;
 
-/**
- * Created by ole on 18/06/14.
- */
-
 @PluginRequestFilter(protocol = "http")
-public class Plugin${type} extends AbstractRequestFilter {
+public class My${type} extends AbstractRequestFilter {
     @Override
     public void afterAbstractHttpResponse(SubmitContext context, AbstractHttpRequestInterface<?> request) {
         HttpResponse response = (HttpResponse) context.getProperty(BaseHttpRequestTransport.RESPONSE);

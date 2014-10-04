@@ -6,9 +6,9 @@ import com.eviware.soapui.support.UISupport;
 import com.eviware.soapui.support.action.support.AbstractSoapUIAction;
 
 @PluginImportMethod(label = "Sample Importer")
-public class Plugin${type} extends AbstractSoapUIAction<WorkspaceImpl> {
-    public Plugin${type}() {
-        super("SampleImportMethod", "A sample importer", "A sample importer description");
+public class My${type} extends AbstractSoapUIAction<WorkspaceImpl> {
+    public My${type}() {
+        super("MyImportMethod", "My importer", "My importer description");
     }
 
     @Override

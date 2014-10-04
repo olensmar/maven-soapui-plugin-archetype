@@ -14,12 +14,8 @@ import com.eviware.soapui.support.UISupport;
 
 import java.net.URL;
 
-/**
- * Created by ole on 18/06/14.
- */
-
 @PluginRequestTransport(protocol = "echo")
-public class Plugin${type} implements RequestTransport {
+public class My${type} implements RequestTransport {
     @Override
     public void addRequestFilter(RequestFilter filter) {
 

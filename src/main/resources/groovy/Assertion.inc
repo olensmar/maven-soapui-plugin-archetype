@@ -14,15 +14,15 @@ import com.eviware.soapui.plugins.auto.PluginTestAssertion;
 import com.eviware.soapui.support.StringUtils;
 import net.sf.json.JSONSerializer;
 
-@PluginTestAssertion(id = "SampleTestAssertionId", label = "Sample JSON Content Assertion",
+@PluginTestAssertion(id = "MyTestAssertionId", label = "My JSON Content Assertion",
         category = AssertionCategoryMapping.VALIDATE_RESPONSE_CONTENT_CATEGORY,
         description = "Asserts that the response message is a valid JSON string")
-public class Plugin${type} extends WsdlMessageAssertion implements ResponseAssertion {
+public class My${type} extends WsdlMessageAssertion implements ResponseAssertion {
     /**
      * Assertions need to have a constructor that takes a TestAssertionConfig and the ModelItem to be asserted
      */
 
-    public Plugin${type}(TestAssertionConfig assertionConfig, Assertable modelItem) {
+    public My${type}(TestAssertionConfig assertionConfig, Assertable modelItem) {
         super(assertionConfig, modelItem, true, false, false, true);
     }
 
